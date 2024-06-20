@@ -10,28 +10,36 @@
 }
 
 .wrapper-page {
-  padding-inline: 112px;
+
 }
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 22px;
   padding-block: 16px;
-
+  padding-inline: 112px;
   background-color: #065E7C;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 40px;
+  padding-inline: 110px;
 }
 
 
 .logo {
   width: 40px;
   height: 40px;
-  border: 1px solid red;
 }
 
 input {
   width: 100%;
+  max-width: 1084px;
   background-color: rgba(255, 255, 255, 20%);
 
   border: none;
@@ -51,4 +59,110 @@ input::placeholder {
   height: 42px;
   border: 1px solid red;
   border-radius: 999px;
+}
+
+.section-first {
+  /* width: calc(80rem + 4rem + 3.4rem); */
+  width: 80rem;
+  box-sizing: content-box;
+  padding: 0 48px 40px 0;
+}
+
+.banner {
+  width: 803px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3.2rem;
+}
+
+.title-container h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #202024;
+}
+
+.wrapper-icon-like-dislike {
+  display: flex;
+  gap: 12px;
+}
+
+.bloco-conteudo {
+  font-size: 1.6rem;
+}
+
+
+/*   CARDS   */
+
+.section-second {
+  width: 384px;
+  display: flex;
+}
+
+.section-second h3 {
+  font-size: 2.4rem;
+  padding-bottom: 3.2rem;
+
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+}
+
+.card img {
+  width: 151px;
+  height: 84px;
+}
+
+.card h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+
+}
+
+.card p {
+  font-size: 1.4rem;
+}
+.container-texto-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 64px;
+  background-color: #387E96;
+  color: #fff;
+  font-size: 1.8rem;
+
+
+}
+/* responsividade */
+
+@media (max-width: 585px) {
+
+  header {
+    padding-inline: 28px;
+  }
+}
+
+@media (max-width: 585px) {
+
+  header {
+    padding-inline: 28px;
+  }
 }
