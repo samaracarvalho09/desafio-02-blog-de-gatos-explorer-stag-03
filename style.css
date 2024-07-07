@@ -118,12 +118,11 @@ h1 {
 .card img {
   width: 15.1rem;
   height: 84px;
-  transition: all 200ms ease-out;  
+  transition: all 200ms ease-out;
 }
 
 .card img:hover {
   transform: scale(1.1);
-
 }
 
 .card h3 {
@@ -156,9 +155,9 @@ footer {
   main {
     display: grid;
     grid-template-areas:
-    "header header"
-    "main aside"
-    "footer footer";
+      "header header"
+      "main aside"
+      "footer footer";
     padding: 3.4rem 10rem 4rem;
     max-width: calc(1210px + 10rem * 2);
     margin: 0;
@@ -171,7 +170,8 @@ footer {
     max-width: 38.4rem;
   }
 
-  .article-content, .title-container { 
+  .article-content,
+  .title-container {
     padding: 0;
   }
 
@@ -180,16 +180,16 @@ footer {
     padding-block: 3rem;
   }
 
-
   header {
     animation: fromTop 600ms 400ms backwards;
   }
 
-  main, section {
+  main,
+  section {
     animation: fromBottom 800ms 600ms backwards;
   }
 
-  @keyframes fromTop{
+  @keyframes fromTop {
     from {
       transform: translateY(-100%);
     }
@@ -201,3 +201,4 @@ footer {
       transform: translateY(100px);
     }
   }
+}
