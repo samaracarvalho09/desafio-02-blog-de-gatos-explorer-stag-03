@@ -180,3 +180,24 @@ footer {
     padding-block: 3rem;
   }
 
+
+  header {
+    animation: fromTop 600ms 400ms backwards;
+  }
+
+  main, section {
+    animation: fromBottom 800ms 600ms backwards;
+  }
+
+  @keyframes fromTop{
+    from {
+      transform: translateY(-100%);
+    }
+  }
+
+  @keyframes fromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  }
